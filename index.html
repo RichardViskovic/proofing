@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Academic Proofreading</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <script src="scripts.js">
-	</script><div id="container">
+    <script src="scripts.js"></script>
+    
+    <div class="container">
         <div id="header-bar">
             <h1>academic proofreading</h1>
             <div id="nav-bar">
                 <div class="nav-link">what we do</div>
-                <div class="nav-link">who we are</div>
-                <div class="nav-link">get an estimate</div>
+                <div class="nav-link" onclick="makeAlert()">who we are</div>
+                <div class="nav-link" onclick="getPrice()">get an estimate</div>
             </div>
         </div>
-        <div id="main">
-            <input type="file" accept=".txt, .doc, .docx, .odt" />
-            <img src="images/thesis.svg" alt="Thesis upload icon">
+        <div id="main"></div>
+            <div class="image-upload" id="image-upload-view">
+                <label for="file-input">
+                    <img src="images/thesis.svg" />
+                </label>
+
+                <input id="file-input" type="file"
+                    accept=".doc,.odf,.rtf,.docx,.odt,.tex, application/msword,.txt,,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+            </div>
+            <div class="who-we-are">
+                
+            </div>
+            <div class="what-we-do">
+                
+            </div>
+
+
         </div>
         <div id="footer"></div>
     </div>
-
-
-</div>
 </body>
+
 </html>
