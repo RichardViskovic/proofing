@@ -1,0 +1,72 @@
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px; /* Half the height */
+    margin-left: -150px; /* Half the width */
+ }
+ img:hover {
+     background-color: blue;
+ }
+ h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    text-align: center;
+ }
+
+#header-bar {
+    width: 100%;
+    text-align: center;
+}
+
+ #nav-bar {
+     background-color: black;
+     height: 40px;
+     line-height: 40px;
+    display: inline-block;
+    }
+
+ .nav-link {
+     width: 300px;
+     height: 40px;
+     font-family: 'Comfortaa', cursive;
+     font-size: 30px;
+     background-color: black;
+     color: white;
+     display: inline-block;
+ }
+
+ .nav-link:hover {
+     background-color: lightgray;
+     color: black;
+     cursor: pointer;
+ }
+
+ input[type='file']{
+     background-color: blue;
+     background-image: url("images/thesis.svg");
+     background-repeat: no-repeat;
+     background-size: 300px 300px;
+    height:300px;
+    width:300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px; /* Half the height */
+    margin-left: -150px; /* Half the width */
+    opacity:0;
+    cursor:pointer;
+    z-index: 10;
+
+  }
+
+ /* .info-note {
+     border-color: black;
+     border-width: 10px;
+     height: 900px;
+     width: 900px;
+ } */
