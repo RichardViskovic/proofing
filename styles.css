@@ -1,3 +1,7 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
 .image-upload > input
 {
     display: none;
@@ -13,16 +17,14 @@
     margin-right: auto;
 }
 
-.fadeout {
-    animation-duration: 3s;
-    animation-name: fadeout;
-    display: none;
-}
-
  h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 40px;
     text-align: center;
+ }
+ h2 {
+     background-color: yellow;
+     padding: 5px;
  }
 
 #header-bar {
@@ -52,7 +54,25 @@
      color: black;
      cursor: pointer;
  }
+ 
+ /* styling for the carousel */
 
+
+ .main-carousel {
+    background: #FFF;
+    padding-top: 20px;
+    }
+
+    .carousel-cell {
+        width: 66%;
+        height: 400px;
+        margin-right: 10px;
+        background: #DDD;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+        padding: 40px;
+      }
+      
  /* Responsive stuff for small screens */
  @media screen and (max-width: 800px) {
     .nav-link {

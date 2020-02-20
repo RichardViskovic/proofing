@@ -8,39 +8,54 @@
     <title>Academic Proofreading</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" rel="stylesheet"
+        type="text/css" />
+        <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
 </head>
 
 <body>
     <script src="scripts.js"></script>
-    
+
     <div class="container">
         <div id="header-bar">
             <h1>academic proofreading</h1>
+
             <div id="nav-bar">
-                <div class="nav-link">what we do</div>
-                <div class="nav-link" onclick="makeAlert()">who we are</div>
-                <div class="nav-link" onclick="getPrice()">get an estimate</div>
+                <a href="#cell1">
+                    <div class="nav-link">what we do</div>
+                </a>
+                <a href="#cell2">
+                    <div class="nav-link">who we are</div>
+                </a>
+                <a href="#cell3">
+                    <div class="nav-link">get an estimate</div>
+                </a>
             </div>
         </div>
-        <div id="main"></div>
-            <div class="image-upload" id="image-upload-view">
+
+        <div class="main-carousel" data-flickity='{ "wrapAround": true, "hash": true, "pageDots": false }'>
+            <div class="carousel-cell" id="cell1">
+                <h2>We proofread and edit your academic writing.</h2>
+            </div>
+            <div class="carousel-cell image-upload" id="cell2">
                 <label for="file-input">
                     <img src="images/thesis.svg" />
                 </label>
 
                 <input id="file-input" type="file"
                     accept=".doc,.odf,.rtf,.docx,.odt,.tex, application/msword,.txt,,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-            </div>
-            <div class="who-we-are">
-                
-            </div>
-            <div class="what-we-do">
-                
+
             </div>
 
-
+            <div class="carousel-cell" id="cell3"></div>
+            <div class="carousel-cell" id="cell4"></div>
+            <div class="carousel-cell" id="cell5"></div>
         </div>
-        <div id="footer"></div>
+
+    </div>
+    <div id="footer">
     </div>
 </body>
 
