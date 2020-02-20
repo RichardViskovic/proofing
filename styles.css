@@ -23,8 +23,16 @@
     text-align: center;
  }
  h2 {
-     background-color: yellow;
      padding: 5px;
+     background: linear-gradient(to right, yellow 50%, #DDD 50%);
+     background-size: 200% 100%;
+     background-position: right bottom;
+     transition: all 1s linear;
+     display: inline-block;
+
+ }
+ h2:hover {
+    background-position: left bottom;
  }
 
 #header-bar {
