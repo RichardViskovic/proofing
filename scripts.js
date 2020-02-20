@@ -1,12 +1,12 @@
 window.addEventListener("load", (event) => {
-    var flkty = new Flickity( '.main-carousel', {
+    const flkty = new Flickity('.main-carousel', {
         // options
-        wrapAround: true, 
+        wrapAround: true,
         hash: true,
-        pageDots: false 
-      });
+        pageDots: false,
     });
-
-flkty.on( 'settle', function( index ) {
-    alert("hello1");  
+    flkty.on( 'change', function() { document.querySelectorAll('h2').forEach(el => el.style.backgroundPosition="right bottom");});
+    flkty.on('settle', function () { document.querySelectorAll('h2').forEach(el => el.style.backgroundPosition="left bottom"); });
 });
+
+

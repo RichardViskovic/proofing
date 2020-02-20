@@ -31,7 +31,7 @@
      display: inline-block;
 
  }
- h2:hover {
+ .highlight {
     background-position: left bottom;
  }
 
