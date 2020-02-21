@@ -5,8 +5,6 @@ window.addEventListener("load", (event) => {
         hash: true,
         pageDots: false,
     });
-    flkty.on( 'change', function() { document.querySelectorAll('h2').forEach(el => el.style.backgroundPosition="right bottom");});
-    flkty.on('settle', function () { document.querySelectorAll('h2').forEach(el => el.style.backgroundPosition="left bottom"); });
 });
 
 

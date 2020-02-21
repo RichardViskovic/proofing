@@ -2,9 +2,8 @@
     font-family: 'Comfortaa', cursive;
 }
 
-.image-upload > input
-{
-    display: none;
+.image-upload {
+    background-color: blue;
 }
 
 .image-upload img
@@ -22,17 +21,27 @@
     font-size: 40px;
     text-align: center;
  }
+ p {
+     line-height: 40px;
+     font-size: 20px;
+ }
+ form {
+     padding: 20px;
+     border-style: solid;
+     border-color: black;
+     border-width: 1px;
+ }
  h2 {
      padding: 5px;
-     background: linear-gradient(to right, yellow 50%, #DDD 50%);
-     background-size: 200% 100%;
-     background-position: right bottom;
-     transition: all 1s linear;
+     background: yellow;
      display: inline-block;
-
  }
  .highlight {
     background-position: left bottom;
+ }
+
+ .highlighted {padding: 5px;
+    background-color:yellow;
  }
 
 #header-bar {
@@ -55,12 +64,23 @@
      background-color: black;
      color: white;
      display: inline-block;
+     text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+
  }
 
  .nav-link:hover {
      background-color: lightgray;
      color: black;
      cursor: pointer;
+ }
+
+ #melandrich {
+     width: 300px;
+     float: left;
+     filter: grayscale(100%);
+     padding-right: 20px;
  }
  
  /* styling for the carousel */

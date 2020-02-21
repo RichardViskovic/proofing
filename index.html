@@ -27,10 +27,10 @@
                     <div class="nav-link">what we do</div>
                 </a>
                 <a href="#cell2">
-                    <div class="nav-link">who we are</div>
+                    <div class="nav-link">get a quote</div>
                 </a>
                 <a href="#cell3">
-                    <div class="nav-link">get an estimate</div>
+                    <div class="nav-link">who we are</div>
                 </a>
             </div>
         </div>
@@ -38,20 +38,42 @@
         <div class="main-carousel">
             <div class="carousel-cell" id="cell1">
                 <h2>We proofread and edit your academic writing.</h2>
+                <p>You send us your work. We proofread it and help you make it shine. Simple.</p>
+                <p>We can help with:</p>
+                <ul>
+                    <li>Style and expression</li>
+                    <li>Grammar, punctuation and spelling</li>
+                    <li>Referencing</li>
+                    <li>Bibliographies</li>
+                    <li>Formatting</li>
+                </ul>
+                <p>Interested? <div class="nav-link">Get a quote.</div></p>
             </div>
             <div class="carousel-cell image-upload" id="cell2">
-                <label for="file-input">
+                <h2>Get a quote.</h2>
+                <p>We charge $0.02/word for basic proofreading, which includes editing for spelling, grammar, punctuation and style.</p>
+                <p>Services such as citations, bibliographies, express proofreading or formatting according to a style guide, may change the price. <span class="highlighted">Upload your file below</span> to get a quote.</p>
+                <!-- <label for="file-input">
                     <img src="images/thesis.svg" />
-                </label>
-
+                </label> -->
+                <form>
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" required />
+                    <label for="file-input">Your file: </label>
                 <input id="file-input" type="file"
                     accept=".doc,.odf,.rtf,.docx,.odt,.tex, application/msword,.txt,,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-
+                    <br>
+                    <input type="checkbox" checked="checked">Spelling, punctuation and grammar</input>
+                    <label for="extras">Additional services</label>
+                    <input type="checkbox" >Format citation<input>
+                </form>
             </div>
 
-            <div class="carousel-cell" id="cell3"></div>
-            <div class="carousel-cell" id="cell4"></div>
-            <div class="carousel-cell" id="cell5"></div>
+            <div class="carousel-cell" id="cell3"><h2>Who we are.</h2><br>
+                <img src="images/M and R.jpg" alt="Photo of Richard and Melanie" id="melandrich">
+                <p>Dr Richard Viskovic and Dr Melanie Dougan.</p>
+                <p>We're both English teachers with PhDs in English.</p>
+            </div>
         </div>
 
     </div>
