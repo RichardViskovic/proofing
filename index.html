@@ -47,25 +47,40 @@
                     <li>Bibliographies</li>
                     <li>Formatting</li>
                 </ul>
-                <p>Interested? <div class="nav-link">Get a quote.</div></p>
+                <p>Interested?</p> 
+                <a href="#cell2">
+                    <div class="nav-link">get a quote</div>
+                </a>
             </div>
             <div class="carousel-cell image-upload" id="cell2">
                 <h2>Get a quote.</h2>
                 <p>We charge $0.02/word for basic proofreading, which includes editing for spelling, grammar, punctuation and style.</p>
-                <p>Services such as citations, bibliographies, express proofreading or formatting according to a style guide, may change the price. <span class="highlighted">Upload your file below</span> to get a quote.</p>
+                <p>Services such as citations, bibliographies, express proofreading or formatting according to a style guide, may change the price. <span class="highlighted">Upload your manuscript below</span> to get a quote.</p>
                 <!-- <label for="file-input">
                     <img src="images/thesis.svg" />
                 </label> -->
-                <form>
-                    <label for="email">Email address: </label>
-                    <input type="email" id="email" required />
-                    <label for="file-input">Your file: </label>
+                <form action="mailto:richard.viskovic@gmail.com" method="POST" enctype="multipart/form-data" name="emailform">
+                    <h3>Email address:</h3>
+                    <input type="email" id="email" required /><br>
+                    <h3>Upload your manuscript:</h3>
                 <input id="file-input" type="file"
                     accept=".doc,.odf,.rtf,.docx,.odt,.tex, application/msword,.txt,,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
                     <br>
-                    <input type="checkbox" checked="checked">Spelling, punctuation and grammar</input>
-                    <label for="extras">Additional services</label>
-                    <input type="checkbox" >Format citation<input>
+                    <h3>Standard services</h3>
+                    <input type="checkbox" id="spag">
+                    <label for="spag">Spelling, grammar and punctuation</label>
+                    <input type="checkbox" id="Styleandexpression" checked="checked">
+                    <label for="Styleandexpression">Style and expression</label>
+                    <h3>Additional services</h3>
+                    <input type="checkbox" id="citations">
+                    <label for="citations">Citation formatting</label>
+                    <input type="checkbox" id="biblio">
+                    <label for="biblio">Bibliographies</label>
+                    <input type="checkbox" id="formatting">
+                    <label for="formatting">Formatting to style guide</label>
+                    <br>
+                    <br>
+                    <button type="submit">Send</button>
                 </form>
             </div>
 
