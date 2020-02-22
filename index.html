@@ -59,15 +59,15 @@
                 <!-- <label for="file-input">
                     <img src="images/thesis.svg" />
                 </label> -->
-                <form action="mailto:richard.viskovic@gmail.com" method="POST" enctype="multipart/form-data" name="emailform">
+                <form action="getaquote.php" method="post" name="quoteform">
                     <h3>Email address:</h3>
-                    <input type="email" id="email" required /><br>
+                    <input type="email" id="email" required name="email"/><br>
                     <h3>Upload your manuscript:</h3>
                 <input id="file-input" type="file"
                     accept=".doc,.odf,.rtf,.docx,.odt,.tex, application/msword,.txt,,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
                     <br>
                     <h3>Standard services</h3>
-                    <input type="checkbox" id="spag">
+                    <input type="checkbox" id="spag" checked="checked" name="spag">
                     <label for="spag">Spelling, grammar and punctuation</label>
                     <input type="checkbox" id="Styleandexpression" checked="checked">
                     <label for="Styleandexpression">Style and expression</label>
@@ -80,7 +80,7 @@
                     <label for="formatting">Formatting to style guide</label>
                     <br>
                     <br>
-                    <button type="submit">Send</button>
+                    <button type="submit" >Send</button>
                 </form>
             </div>
 
